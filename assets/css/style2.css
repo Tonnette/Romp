@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.carousel-inner img {
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    border: 5px solid rgb(48, 48, 48);
+}
+
+.rompText {
+    text-align: center;
+    justify-content: center;
+    font-size: 120px;
+    padding: 0px 0px 25px 0px;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px #4a4a4a;
+    margin: -50px 0px 0px 0px;
+}
+
+.seriesText {
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0px 0px 0px 0px;
+    margin: -40px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px #4a4a4a;
+}
+
+.webseries {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Allura', cursive;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(114, 45, 133);
+    margin: -10px 0px 0px 0px;
+}
+
+.play button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    font-size: 60px;
+    color: #fff;
+    color: black;
+    text-align: right;
+    justify-content: right;
+}
+
+.play button:focus {
+    outline: none;
+}
+
+.play button:hover {
+    filter: invert(70%)
+}
+
+.play {
+    text-align: right;
+    justify-content: right;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.playText {
+    text-align: right !important;
+    justify-content: right !important;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: black !important;
+    font-size: 24px;
+    margin-top: -30px;
+}
+
+.container-fluid {
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom, #ffa9e4 0%, #ffa9e4 30%, #a4dcff 30%, #a4dcff 100%);
+    align-items: center;
+    justify-content: center;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container-fluid.show-nav {
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    z-index: 10;
+}
+
+.circle {
+    background-color: rgb(41, 40, 40);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.container-fluid.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.container-fluid.show-nav+nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li+li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li+li+li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.episodes {
+    padding-top: 20px;
+}
+
+.romp,
+.why,
+.theEgg,
+.milk,
+.loveBytes,
+.wally,
+.vicous,
+.holding {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle1,
+.middle2,
+.middle3,
+.middle4,
+.middle5,
+.middle6,
+.middle7,
+.middle8,
+.middle9 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rompCard:hover .romp,
+.eggCard:hover .theEgg,
+.milkCard:hover .milk,
+.loveCard:hover .loveBytes,
+.slutCard:hover .slut,
+.wallyCard:hover .wally,
+.viciousCard:hover .vicious,
+.holdingCard:hover .holding,
+.whyCard:hover .why {
+    opacity: 0.3;
+}
+
+.rompCard:hover .middle1,
+.eggCard:hover .middle2,
+.milkCard:hover .middle3,
+.loveCard:hover .middle4,
+.slutCard:hover .middle5,
+.wallyCard:hover .middle6,
+.viciousCard:hover .middle7,
+.holdingCard:hover .middle8,
+.whyCard:hover .middle9 {
+    opacity: 0.8;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9 {
+    background-color: #00c0d1;
+    color: white;
+    border-radius: 10px !important;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.secondRow {
+    padding-top: 25px;
+}
