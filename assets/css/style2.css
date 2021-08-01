@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script&display=swap');
 * {
     box-sizing: border-box;
@@ -44,7 +44,7 @@ a {
     padding: 0px 0px 0px 0px;
     margin: -40px 0px 0px 0px;
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     text-shadow: 1px 1px 2px #4a4a4a;
 }
@@ -90,8 +90,9 @@ a {
 .playText {
     text-align: right !important;
     justify-content: right !important;
+    /* text-transform: uppercase; */
     font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
     color: black !important;
     font-size: 24px;
     margin-top: -30px;
@@ -110,7 +111,7 @@ a {
 }
 
 .container-fluid.show-nav {
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
 }
 
 .circle-container {
@@ -178,6 +179,8 @@ nav ul {
 
 nav ul li {
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
     color: #fff;
     margin: 40px 0;
     transform: translateX(-100%);
@@ -260,9 +263,33 @@ nav ul li+li+li {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    background-color: #b3fff7;
+    border-radius: 10px !important;
+    padding: 15px
+}
+
+.middle2 {
+    background-color: #80bdf2;
+}
+
+.middle3 {
+    background-color: #fff0b3;
+}
+
+.middle4 {
+    background-color: #ffb3d4;
+}
+
+.middle5 {
+    background-color: #f5b0f3;
+}
+
+.middle6 {
+    background-color: #ca8dff;
 }
 
 .rompCard:hover .romp,
@@ -289,15 +316,65 @@ nav ul li+li+li {
     opacity: 0.8;
 }
 
-.text1,
+.text1a,
+.text2a,
+.text3a,
+.text4a,
+.text5a,
+.text6a {
+    color: #275b53;
+    font-size: 30px;
+    font-family: 'Allura', cursive;
+    font-family: 'Dancing Script', cursive;
+}
+
+.text2a {
+    color: #2a275b;
+}
+
+.text3a {
+    color: #d07200;
+}
+
+.text4a {
+    color: #b1066d;
+}
+
+.text5a {
+    color: #7c0582;
+}
+
+.text6a {
+    color: #4e0582;
+}
+
+.text1b,
+.text2b,
+.text3b,
+.text4b,
+.text5b,
+.text6b {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text1c,
+.text2c,
+.text3c,
+.text4c,
+.text5c,
+.text6c {
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+}
+
 .text2,
 .text3,
 .text4,
 .text5,
-.text6,
-.text7,
-.text8,
-.text9 {
+.text6 {
     background-color: #00c0d1;
     color: white;
     border-radius: 10px !important;
@@ -307,4 +384,40 @@ nav ul li+li+li {
 
 .secondRow {
     padding-top: 25px;
+}
+
+.myFooter {
+    background-color: #333;
+    ;
+}
+
+.myFooterText {
+    color: rgb(133, 133, 133);
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1250px) {
+    .play,
+    .playText {
+        text-align: center;
+        justify-content: center;
+        margin-top: -20px;
+    }
+    .webseries {
+        font-size: 34px;
+    }
+    .homeText,
+    .playText {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .playText,
+    .webseries {
+        display: none;
+    }
 }
