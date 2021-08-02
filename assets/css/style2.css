@@ -116,18 +116,16 @@ a {
 .container-fluid {
     background-color: #eafbff;
     background-image: linear-gradient(to bottom, #ffffff 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
-    /* background-color: #333; */
     align-items: center;
     justify-content: center;
     transform-origin: top left;
     transition: transform 0.5s linear;
     width: 100vw;
-    min-height: 100vh;
     padding: 50px;
 }
 
 .container-fluid.show-nav {
-    transform: rotate(-15deg);
+    transform: rotate(-20deg);
 }
 
 .circle-container {
@@ -138,16 +136,15 @@ a {
 }
 
 .circle {
-    background-color: rgb(67, 67, 67);
+    background-color: #88dcfa;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     position: relative;
-    transition: transform 0.5s linear;
 }
 
-.container-fluid.show-nav .circle {
-    transform: rotate(-70deg);
+.container-fluid.show-nav {
+    transform: rotate(-15deg);
 }
 
 .circle button {
@@ -171,9 +168,8 @@ a {
 }
 
 .circle button#close {
-    top: 60%;
-    transform: rotate(90deg);
-    transform-origin: top left;
+    left: 60%;
+    display: none;
 }
 
 .container-fluid.show-nav+nav li {
@@ -205,16 +201,16 @@ nav ul li {
 
 nav ul li i {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 
 nav ul li+li {
-    margin-left: 15px;
+    margin-left: 15px !important;
     transform: translateX(-150%);
 }
 
 nav ul li+li+li {
-    margin-left: 30px;
+    margin-left: 30px !important;
     transform: translateX(-200%);
 }
 
@@ -404,7 +400,6 @@ nav ul li+li+li {
 
 .myFooter {
     background-color: #333;
-    ;
 }
 
 .myFooterText {
@@ -445,9 +440,14 @@ nav ul li+li+li {
     .seriesText {
         margin-top: -50px;
         font-size: 50px;
-        ;
+        text-shadow: 1px 1px rgb(94, 94, 94);
     }
     .container-fluid {
         background-image: linear-gradient(to bottom, #fef1e4 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
     }
+    /* .circle {
+        height: 170px;
+        width: 170px;
+        position: fixed;
+    } */
 }
