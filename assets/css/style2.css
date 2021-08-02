@@ -29,25 +29,39 @@ a {
     border: 5px solid rgb(48, 48, 48);
 }
 
-
-/* .textBox {
-    width: 400px;
-    height: 50px;
-    margin: 0px 0px 0px 0px;
+.rompBox {
+    background-image: linear-gradient(to bottom, #faf2ea 0%, #fef1e4 100%);
+    margin: 0px;
     padding: 0px;
-} */
+    width: 100;
+    height: 185px;
+}
+
+.myRow {
+    margin: 0px;
+    padding: 0px;
+    width: 100;
+}
+
+.myCarousel,
+.episodes {
+    padding: 0px 25px 0px 25px;
+}
 
 .rompText {
-    margin: auto;
     text-align: center !important;
     font-size: 200px;
-    padding: 0px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     color: #f26294;
     text-shadow: 2px 2px 3px rgb(101, 101, 101);
-    margin: -40px 0px 0px 0px;
+    margin: -90px 0px 0px 0px;
     letter-spacing: -15px;
+}
+
+.textBox {
+    margin-top: -30px;
 }
 
 .seriesText {
@@ -55,7 +69,7 @@ a {
     font-weight: 400;
     font-size: 100px;
     bottom: 0 !important;
-    margin: -100px 0px 0px 0px;
+    margin: auto;
     text-align: center;
     padding: 0px;
     color: #8521b0;
@@ -114,14 +128,13 @@ a {
 }
 
 .container-fluid {
-    background-color: #eafbff;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
+    background-color: #fcaaf2;
     align-items: center;
     justify-content: center;
     transform-origin: top left;
     transition: transform 0.5s linear;
-    width: 100vw;
-    padding: 50px;
+    width: 100%;
+    padding: 0px;
 }
 
 .container-fluid.show-nav {
@@ -410,44 +423,33 @@ nav ul li+li+li {
     margin-bottom: 10px;
 }
 
-@media(min-width: 992px) {
-    .seriesText {
-        text-align: center;
-        margin-top: -100px;
-        font-weight: 600;
-        font-size: 120px;
+@media(max-width: 992px) {
+    .webseries {
+        display: none;
+    }
+    .rompBox {
+        height: 82px;
     }
     .rompText {
-        text-align: center;
-        font-size: 200px;
-        margin: -90px 0px 0px 0px;
+        font-size: 100px;
+        letter-spacing: normal;
+        letter-spacing: -5px;
+        height: 80px;
+        margin-top: -80px;
     }
-    .webseries {
-        font-size: 40px;
-    }
-    .container-fluid {
-        background-image: linear-gradient(to bottom, #ffffff 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
+    .seriesText {
+        font-size: 50px;
+        text-shadow: 1px 1px 2px rgb(94, 94, 94);
+        margin-top: 20px;
     }
 }
 
 @media(max-width: 500px) {
-    .webseries {
-        display: none;
-    }
     .rompText {
-        font-size: 100px;
-    }
-    .seriesText {
+        font-size: 70px;
+        letter-spacing: normal;
+        letter-spacing: -5px;
+        height: 80px;
         margin-top: -50px;
-        font-size: 50px;
-        text-shadow: 1px 1px rgb(94, 94, 94);
     }
-    .container-fluid {
-        background-image: linear-gradient(to bottom, #fef1e4 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
-    }
-    /* .circle {
-        height: 170px;
-        width: 170px;
-        position: fixed;
-    } */
 }
