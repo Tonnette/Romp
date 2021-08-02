@@ -115,7 +115,7 @@ a {
 
 .container-fluid {
     background-color: #eafbff;
-    background-image: linear-gradient(to bottom, #fef1e4 0%, #fff0e2 5%, #fcaaf2 5%, #fcaaf2 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
     /* background-color: #333; */
     align-items: center;
     justify-content: center;
@@ -431,7 +431,7 @@ nav ul li+li+li {
         font-size: 40px;
     }
     .container-fluid {
-        background-image: linear-gradient(to bottom, #fef1e4 0%, #fef1e4 10%, #fcaaf2 10%, #fcaaf2 100%);
+        background-image: linear-gradient(to bottom, #ffffff 0%, #fef1e4 5%, #fcaaf2 5%, #fcaaf2 100%);
     }
 }
 
