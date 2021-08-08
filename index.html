@@ -11,9 +11,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style2.css">
 
 
+
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100" \>
 
     <div class="circle-container">
         <div class="circle">
@@ -37,21 +38,9 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 textBox">
                 <div class="seriesText">The Series</div>
-
-
-
-
             </div>
-            <!-- <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="webseries">Dating has never been so queer</div>
-            </div> -->
-
         </div>
 
-        <div class="row">
-
-
-        </div>
 
         <!-- <div class="col-lg-3 col-md-3 col-sm-12 play">
                 <button onclick="window.location.href='trailer.html'">
@@ -67,31 +56,18 @@
 
 
 
-        <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-ride="carousel" style="width: 100%">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-            </ol>
+
+
+        <div id="carouselExampleIndicators" class="slideshow-container carousel slide myCarousel" data-ride="carousel" style="width: 100%">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active mySlides">
                     <img src="./assets/images/carousel/mayo.jpg" class="d-block w-100" alt="mayo">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/bar.jpg" class="d-block w-100" alt="bar">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -99,14 +75,14 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/colin.jpg" class="d-block w-100" alt="colin">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/sexy.jpg" class="d-block w-100" alt="sexy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -116,7 +92,7 @@
 
 
 
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/drink.jpg" class="d-block w-100" alt="drink">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -124,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/kiss.jpg" class="d-block w-100" alt="kiss">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -132,14 +108,14 @@
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/Michael.jpg" class="d-block w-100" alt="Michael">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/painting.jpg" class="d-block w-100" alt="painting">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -153,14 +129,14 @@
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/promo.jpg" class="d-block w-100" alt="promo">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item mySlides">
                     <img src="./assets/images/carousel/stacey.jpg" class="d-block w-100" alt="stacey">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Dating has never been so queer</h5>
@@ -168,17 +144,32 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev prev" role="button" onclick="plusSlides(-1)" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next next" role="button" onclick="plusSlides(1)" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+
+            </div>
         </div>
 
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/sJl2BIv9pxU" title="YouTube video player" style="display:none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -186,8 +177,8 @@
 
         <div class="episodes">
             <!-- <p class="webseries">Dating has never been so Queer</p> -->
-            <div class="row firstRow row-centered">
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-centered">
+            <div class="row  row-centered">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-centered">
                     <div class="card rompCard">
                         <a href="romp.html">
                             <img src="./assets/images/thumbnails/ep1.jpg" class="card-img-top thumbnail romp" alt="catwallk pose">
@@ -199,7 +190,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-centered col-lg-4 col-xl-4 col-centered">
+                <div class="col-sm-12 col-md-6 col-centered col-lg-4 col-xl-4 col-centered">
                     <div class="card eggCard">
                         <a href="egg.html">
                             <img src="./assets/images/thumbnails/Ep2.jpg" class="card-img-top thumbnail theEgg" alt="animated penguins">
@@ -211,7 +202,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-centered col-lg-4 col-xl-4 col-centered">
+                <div class="col-sm-12 col-md-6 col-centered col-lg-4 col-xl-4 col-centered">
                     <div class="card milkCard">
                         <a href="milk.html">
                             <img src="./assets/images/thumbnails/ep3.jpg" class="card-img-top thumbnail milk" alt="girls looking out to sea">
@@ -224,9 +215,9 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="row secondRow row-centered">
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-centered">
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-centered">
                     <div class="card loveCard">
                         <a href="lovebytes.html">
                             <img src="./assets/images/thumbnails/ep4.jpg" class="card-img-top thumbnail loveBytes" alt="michael on computer">
@@ -239,7 +230,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-12 col-centered col-lg-4 col-xl-4 col-centered">
+                <div class="col-sm-12 col-md-6 col-centered col-lg-4 col-xl-4 col-centered">
                     <div class="card slutCard">
                         <a href="slu.html">
                             <img src="./assets/images/thumbnails/ep5.jpg" class="card-img-top thumbnail slut" alt="posing with cape">
@@ -252,7 +243,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-12 col-centered col-lg-4 col-xl-4 col-centered">
+                <div class="col-sm-12 col-md-6 col-centered col-lg-4 col-xl-4 col-centered">
                     <div class="card wallyCard">
                         <a href="wally.html">
                             <img src="./assets/images/thumbnails/ep6.jpg" class="card-img-top thumbnail wally" alt="girl eats cake">
@@ -266,35 +257,32 @@
 
                 </div>
             </div>
-
         </div>
     </div>
-
-    </div>
-    <nav class="myNav" id="myNav">
+    <nav>
         <ul>
-            <li><i class="fas fa-home"></i> About</li>
-            <li><i class="fas fa-user-alt"></i> LoveBytes</li>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> About</li>
             <li><i class="fas fa-envelope"></i> Contact</li>
         </ul>
     </nav>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small pt-4 myFooter">
 
 
+    <footer class="page-footer font-small blue pt-4">
 
+        <!-- Footer Links -->
 
-        <div class="text-center myFooterText"> © Copyright Opening Act Films
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 myFooter">© Opening Act Films
         </div>
-
+        <!-- Copyright -->
 
     </footer>
-    <!-- Footer -->
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
