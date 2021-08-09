@@ -2,6 +2,9 @@ const open = document.getElementById('open');
 const close = document.getElementById('close');
 const container = document.querySelector('.container-fluid')
 const myNav = document.querySelector('nav')
+const more = document.querySelector('.moreText')
+const less = document.querySelector('.lessText')
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -45,3 +48,7 @@ close.addEventListener('click', () => document.getElementById("open").style.disp
 close.addEventListener('click', () => myNav.style.visibility = "hidden");
 close.addEventListener('click', () => myNav.style.opacity = "0");
 close.addEventListener('click', () => myNav.style.transition = "opacity 1s, visibility 1s");
+
+more.addEventListener('click', () => document.querySelector(".photo2").style.display = "block");
+more.addEventListener('click', () => more.style.display = "none");
+more.addEventListener('click', () => less.style.display = "block");
