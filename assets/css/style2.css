@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=DDancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -68,7 +71,7 @@ a {
 }
 
 .rompBox {
-    background-image: linear-gradient(to bottom, #faf2ea 0%, #fef1e4 100%);
+    background-color: #fed8ed;
     margin: 0px;
     padding: 0px;
     width: 100;
@@ -95,6 +98,10 @@ a {
     padding: 0px 50px 0px 25px;
 }
 
+.trailerThumbImg {
+    width: 40vw;
+}
+
 .photo2,
 .lessText {
     display: none;
@@ -116,9 +123,9 @@ a {
 } */
 
 button {
-    background-color: purple;
+    background-color: rgb(250, 145, 52);
     color: white;
-    border: 1px purple solid;
+    border: none;
     border-radius: 10px;
     font-size: 14px;
     text-transform: uppercase;
@@ -127,6 +134,15 @@ button {
     overflow: hidden;
     margin: 10px 0;
     position: relative;
+}
+
+.trailerBtnBox {
+    text-align: center;
+    justify-content: center;
+}
+
+.watchTrailer {
+    background-color: rgb(204, 165, 249) !important;
 }
 
 .episodes,
@@ -153,21 +169,55 @@ button {
 }
 
 .textBox {
-    margin-top: -30px;
+    margin-top: -40px;
+}
+
+.synopsisBox {
+    padding: 45px 25px 0px 25px;
+}
+
+.synopsis {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 .seriesText,
-.castText {
-    font-family: 'Dancing Script', cursive;
+.castText,
+.datingText {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Amatic SC', cursive;
     font-weight: 400;
-    font-size: 100px;
+    font-size: 120px;
     bottom: 0 !important;
     margin: auto;
     text-align: center;
     padding: 0px;
-    color: #8521b0;
+    color: #ff9c50;
     text-shadow: 1px 2px rgb(94, 94, 94);
+    letter-spacing: -5px;
     /* text-transform: uppercase; */
+}
+
+.datingText {
+    font-size: 80px;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Amatic SC', cursive;
+    font-weight: 100;
+    color: #0884f9;
+    padding-top: 10px;
+}
+
+.aboutTrailer {
+    margin: -20px 25px 0px 25px;
+    background-color: #bde0fe;
+}
+
+.trailerThumb {
+    margin: auto;
+    text-align: right;
+    justify-content: right;
+    padding: 10px 30px 10px 10px;
 }
 
 .webseries {
@@ -183,45 +233,8 @@ button {
     margin: -10px 0px 10px 0px;
 }
 
-.play button {
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    font-size: 60px;
-    color: #fff;
-    color: black;
-    text-align: right;
-    justify-content: right;
-}
-
-.play button:focus {
-    outline: none;
-}
-
-.play button:hover {
-    filter: invert(70%)
-}
-
-.play {
-    text-align: right;
-    justify-content: right;
-    margin-top: 80px;
-    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-.playText {
-    text-align: right !important;
-    justify-content: right !important;
-    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    color: black !important;
-    font-size: 24px;
-    margin-top: -30px;
-}
-
 .container-fluid {
-    background-color: #fcaaf2;
+    background-color: #fae7d0;
     align-items: center;
     justify-content: center;
     transform-origin: top left;
@@ -242,7 +255,7 @@ button {
 }
 
 .circle {
-    background-color: #88dcfa;
+    background-color: #e6bcff;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -270,11 +283,13 @@ button {
 }
 
 .circle button#open {
-    left: 60%;
+    left: 45%;
+    top: 45%
 }
 
 .circle button#close {
-    left: 60%;
+    left: 45%;
+    top: 45%;
     display: none;
 }
 
@@ -321,6 +336,18 @@ nav ul li+li+li {
 nav ul li+li+li+li {
     margin-left: 40px;
     transform: translateX(-250%);
+}
+
+.socials {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.icons {
+    font-size: 50px !important;
+    letter-spacing: 25px;
+    color: #053663;
 }
 
 .content img {
@@ -552,6 +579,15 @@ nav ul li+li+li+li {
     .video {
         width: 100vw;
     }
+    .trailerThumb {
+        text-align: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .trailerThumbImg {
+        width: 90vw;
+        padding-bottom: 10px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -568,6 +604,14 @@ nav ul li+li+li+li {
     }
     .video {
         width: 100vw;
+    }
+    .trailerThumb {
+        text-align: center;
+        justify-content: center;
+    }
+    .trailerThumbImg {
+        width: 80vw;
+        padding-bottom: 10px;
     }
 }
 
