@@ -602,6 +602,10 @@ nav ul li+li+li+li {
     .synopsis {
         display: none;
     }
+    .middle7 {
+        width: 90vw;
+        height: 30vh;
+    }
 }
 
 @media(max-width: 1199px) {
@@ -669,10 +673,17 @@ nav ul li+li+li+li {
     }
     .middle7 {
         width: 90vw;
-        height: 15vh;
+        height: 20vh;
     }
     .text7a {
         font-size: 40px !important;
+    }
+    .datingBox {
+        top: 0 !important;
+    }
+    .icons {
+        font-size: 18px;
+        letter-spacing: 10px;
     }
 }
 
@@ -719,6 +730,23 @@ nav ul li+li+li+li {
     .text7a,
     .datingText2 {
         font-size: 30px !important;
+    }
+    .datingBox {
+        text-align: left !important;
+        left: 5% !important
+    }
+    .datingText {
+        font-size: 23px;
+        text-align: left !important;
+        text-shadow: 1px 1px rgb(41, 41, 41);
+    }
+    .socials {
+        text-align: left !important;
+    }
+    .icons {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: left !important;
     }
 }
 
