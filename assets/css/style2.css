@@ -679,7 +679,7 @@ nav ul li+li+li+li {
 @media(max-width: 575px) {
     .middle7 {
         width: 86vw;
-        height: 10vh;
+        height: 18vh;
     }
     .trailerBtnBox2 {
         top: 80% !important;
@@ -713,7 +713,7 @@ nav ul li+li+li+li {
         padding-bottom: 10px;
     }
     .icons {
-        font-size: 25px;
+        font-size: 15px;
         letter-spacing: 15px;
     }
     .text7a,
