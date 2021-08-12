@@ -39,6 +39,17 @@ a {
     margin: auto;
 }
 
+.datingRow {
+    text-align: right;
+    padding-right: 25px;
+    padding-left: 50px;
+}
+
+.synopsisBox {
+    text-align: center;
+    padding: 35px 35px 0px 35px;
+}
+
 
 /* Hide the images by default */
 
@@ -98,10 +109,6 @@ a {
     padding: 0px 50px 0px 25px;
 }
 
-.trailerThumbImg {
-    width: 40vw;
-}
-
 .photo2,
 .lessText {
     display: none;
@@ -146,8 +153,15 @@ button {
 }
 
 .episodes,
+.myCarousel,
 .slideshow-container {
     padding: 0px 25px 0px 25px;
+}
+
+.rowTrailer {
+    margin: 0px 25px 0px 25px;
+    justify-content: center;
+    text-align: center;
 }
 
 .col-centered {
@@ -172,14 +186,10 @@ button {
     margin-top: -40px;
 }
 
-.synopsisBox {
-    padding: 45px 25px 0px 25px;
-}
-
 .synopsis {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .seriesText,
@@ -200,24 +210,39 @@ button {
 }
 
 .datingText {
-    font-size: 80px;
-    /* font-family: 'Pacifico', cursive; */
+    font-size: 68px;
     font-family: 'Amatic SC', cursive;
     font-weight: 100;
     color: #0884f9;
-    padding-top: 10px;
+    letter-spacing: -2px;
+}
+
+.datingText2 {
+    font-size: 70px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 100;
+    letter-spacing: -2px;
+    text-shadow: 2px 4px rgb(38, 38, 38);
 }
 
 .aboutTrailer {
-    margin: -20px 25px 0px 25px;
+    margin: 20px 25px 0px 25px;
     background-color: #bde0fe;
 }
 
-.trailerThumb {
+.datingBox {
     margin: auto;
+}
+
+.trailerThumb {
     text-align: right;
     justify-content: right;
+    margin: auto;
     padding: 10px 30px 10px 10px;
+}
+
+.trailerThumbImg {
+    width: 40vw;
 }
 
 .webseries {
@@ -342,12 +367,14 @@ nav ul li+li+li+li {
     margin: auto;
     padding-top: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .icons {
-    font-size: 50px !important;
+    font-size: 30px;
     letter-spacing: 25px;
     color: #053663;
+    cursor: pointer;
 }
 
 .content img {
@@ -444,6 +471,10 @@ nav ul li+li+li+li {
     background-color: #ca8dff;
 }
 
+.middle7 {
+    background-color: #b8dbff;
+}
+
 .rompCard:hover .romp,
 .eggCard:hover .theEgg,
 .milkCard:hover .milk,
@@ -452,8 +483,11 @@ nav ul li+li+li+li {
 .wallyCard:hover .wally,
 .characterCard:hover .vicious,
 .holdingCard:hover .holding,
-.whyCard:hover .why {
-    opacity: 0.3;
+.whyCard:hover .why,
+.michaelCard:hover .trailerBtnBox,
+.michaelCard:hover .michael,
+.michaelCard:hover .datingText2 {
+    opacity: 0.2;
 }
 
 .rompCard:hover .middle1,
@@ -463,8 +497,9 @@ nav ul li+li+li+li {
 .slutCard:hover .middle5,
 .wallyCard:hover .middle6,
 .characterCard:hover .middle6,
+.michaelCard:hover .middle7,
 .holdingCard:hover .middle8,
-.whyCard:hover .middle9 {
+.whyCard:hover {
     opacity: 0.8;
 }
 
@@ -500,12 +535,22 @@ nav ul li+li+li+li {
     color: #4e0582;
 }
 
+.text7a {
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 100;
+    color: #0884f9;
+    letter-spacing: -2px;
+    padding: 0px !important;
+}
+
 .text1b,
 .text2b,
 .text3b,
 .text4b,
 .text5b,
-.text6b {
+.text6b,
+.text7b {
     color: black;
     font-size: 20px;
     font-weight: 700;
@@ -554,6 +599,23 @@ nav ul li+li+li+li {
 }
 
 @media(max-width: 991px) {
+    .synopsis {
+        display: none;
+    }
+}
+
+@media(max-width: 1199px) {
+    .middle7 {
+        width: 90vw;
+        height: 30vh;
+    }
+    .trailerBtnBox2 {
+        top: 70% !important;
+    }
+    .watchTrailer {
+        font-size: 10px;
+        padding: 10px;
+    }
     .webseries {
         display: none;
     }
@@ -568,29 +630,64 @@ nav ul li+li+li+li {
         margin-top: -80px;
     }
     .seriesText {
-        font-size: 50px;
+        font-size: 75px;
         text-shadow: 1px 1px 2px rgb(94, 94, 94);
         margin-top: 20px;
     }
     .photo,
     .photo3 {
-        width: 220px !important;
+        width: 150px !important;
     }
-    .video {
-        width: 100vw;
+    .trailerThumbImg {
+        width: 40vw;
     }
     .trailerThumb {
         text-align: center;
         justify-content: center;
+        margin: auto;
         padding: 0px;
     }
-    .trailerThumbImg {
-        width: 90vw;
-        padding-bottom: 10px;
+    .datingText {
+        padding-top: 25px;
+        font-size: 50px;
+    }
+    .datingText2 {
+        font-size: 60px;
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 990px) {
+    .trailerThumbImg {
+        width: 90vw;
+    }
+    .middle7 {
+        width: 90vw;
+        height: 20vh;
+    }
+    .text7b {
+        display: none;
+    }
+    .middle7 {
+        width: 90vw;
+        height: 15vh;
+    }
+    .text7a {
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width: 575px) {
+    .middle7 {
+        width: 86vw;
+        height: 10vh;
+    }
+    .trailerBtnBox2 {
+        top: 80% !important;
+    }
+    .watchTrailer {
+        font-size: 8px;
+        padding: 5px;
+    }
     .rompText {
         font-size: 70px;
         letter-spacing: normal;
@@ -608,10 +705,20 @@ nav ul li+li+li+li {
     .trailerThumb {
         text-align: center;
         justify-content: center;
+        margin: auto;
+        padding: 0px;
     }
     .trailerThumbImg {
         width: 80vw;
         padding-bottom: 10px;
+    }
+    .icons {
+        font-size: 25px;
+        letter-spacing: 15px;
+    }
+    .text7a,
+    .datingText2 {
+        font-size: 30px !important;
     }
 }
 
