@@ -737,44 +737,43 @@ nav ul li+li+li+li {
         font-size: 30px !important;
     }
     .datingBox {
-        text-align: left !important;
-        left: 5% !important
+        left: 2% !important
     }
     .datingText {
         padding-top: 2px;
         font-size: 40px;
-        text-align: left !important;
+        text-align: center !important;
         text-shadow: 1px 1px rgb(41, 41, 41);
     }
     .socials {
-        text-align: left !important;
+        text-align: center !important;
     }
     .icons {
         font-size: 15px;
         letter-spacing: 2px;
-        text-align: left !important;
+        text-align: center !important;
     }
 }
 
 @media(max-width: 400px) {
     .datingBox {
-        text-align: left !important;
-        left: 5% !important
+        left: 2% !important
     }
     .datingText {
-        padding-top: 2px;
-        font-size: 25px;
-        text-align: left !important;
+        padding: 2px;
+        font-size: 22px;
+        text-align: center !important;
         text-shadow: 1px 1px rgb(41, 41, 41);
+        letter-spacing: -1px;
     }
     .socials {
-        padding: 0px !important;
-        text-align: left !important;
+        text-align: center !important;
+        padding: 0px;
     }
     .icons {
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: 2px;
-        text-align: left !important;
+        text-align: center !important;
     }
 }
 
