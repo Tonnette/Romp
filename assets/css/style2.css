@@ -598,13 +598,12 @@ nav ul li+li+li+li {
     font-weight: 400;
 }
 
-@media(max-width: 991px) {
-    .synopsis {
-        display: none;
+@media(min-width: 1500px) {
+    .datingText {
+        font-size: 90px;
     }
-    .middle7 {
-        width: 90vw;
-        height: 30vh;
+    .synopsis {
+        font-size: 25px;
     }
 }
 
@@ -657,6 +656,12 @@ nav ul li+li+li+li {
     }
     .datingText2 {
         font-size: 60px;
+    }
+}
+
+@media(max-width: 858px) {
+    .synopsis {
+        display: none;
     }
 }
 
@@ -736,7 +741,8 @@ nav ul li+li+li+li {
         left: 5% !important
     }
     .datingText {
-        font-size: 23px;
+        padding-top: 2px;
+        font-size: 40px;
         text-align: left !important;
         text-shadow: 1px 1px rgb(41, 41, 41);
     }
@@ -745,6 +751,28 @@ nav ul li+li+li+li {
     }
     .icons {
         font-size: 15px;
+        letter-spacing: 2px;
+        text-align: left !important;
+    }
+}
+
+@media(max-width: 400px) {
+    .datingBox {
+        text-align: left !important;
+        left: 5% !important
+    }
+    .datingText {
+        padding-top: 2px;
+        font-size: 25px;
+        text-align: left !important;
+        text-shadow: 1px 1px rgb(41, 41, 41);
+    }
+    .socials {
+        padding: 0px !important;
+        text-align: left !important;
+    }
+    .icons {
+        font-size: 12px;
         letter-spacing: 2px;
         text-align: left !important;
     }
