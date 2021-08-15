@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=DDancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 * {
@@ -43,11 +44,6 @@ a {
     text-align: right;
     padding-right: 25px;
     padding-left: 50px;
-}
-
-.synopsisBox {
-    text-align: center;
-    padding: 35px 35px 0px 35px;
 }
 
 
@@ -130,7 +126,10 @@ a {
 } */
 
 button {
-    background-color: rgb(250, 145, 52);
+    font-family: 'Montserrat', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    background-color: rgb(137, 211, 198);
     color: white;
     border: none;
     border-radius: 10px;
@@ -168,6 +167,8 @@ button {
     padding-top: 20px;
     text-align: center;
     justify-content: center;
+    border-radius: 50%;
+    border: 0;
 }
 
 .rompText {
@@ -186,39 +187,50 @@ button {
     margin-top: -40px;
 }
 
+.synopsisBox {
+    text-align: left;
+    padding: 35px 0px 0px 0px;
+}
+
 .synopsis {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 18px;
+}
+
+.datingBox {
+    margin: auto;
 }
 
 .seriesText,
 .castText,
 .datingText {
     /* font-family: 'Dancing Script', cursive; */
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Dancing Script', cursive;
     font-weight: 400;
     font-size: 120px;
-    bottom: 0 !important;
     margin: auto;
     text-align: center;
     padding: 0px;
-    color: #ff9c50;
+    color: #5ab5a0;
     text-shadow: 1px 2px rgb(94, 94, 94);
     letter-spacing: -5px;
     /* text-transform: uppercase; */
 }
 
 .datingText {
-    font-size: 68px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Montserrat', cursive;
     font-weight: 100;
-    color: #0884f9;
+    text-transform: uppercase;
+    font-size: 40px !important;
     letter-spacing: -2px;
+    color: #303030;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    text-align: left;
 }
 
 .datingText2 {
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Amatic SC', cursive;
     font-weight: 100;
     letter-spacing: -2px;
@@ -259,7 +271,7 @@ button {
 }
 
 .container-fluid {
-    background-color: #fae7d0;
+    background-color: #fcf4eb;
     align-items: center;
     justify-content: center;
     transform-origin: top left;
@@ -373,7 +385,7 @@ nav ul li+li+li+li {
 .icons {
     font-size: 30px;
     letter-spacing: 25px;
-    color: #053663;
+    color: #303030;
     cursor: pointer;
 }
 
@@ -419,13 +431,16 @@ nav ul li+li+li+li {
 .loveBytes,
 .wally,
 .vicous,
-.holding {
+.holding,
+.slut {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 50%;
+    border: 0;
 }
 
 .middle1,
@@ -447,7 +462,7 @@ nav ul li+li+li+li {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     background-color: #b3fff7;
-    border-radius: 5px !important;
+    border-radius: 30% !important;
     padding: 15px
 }
 
@@ -473,6 +488,15 @@ nav ul li+li+li+li {
 
 .middle7 {
     background-color: #b8dbff;
+}
+
+.rompCard,
+.eggCard,
+.milkCard,
+.loveCard,
+.slutCard,
+.wallyCard {
+    border-radius: 50%;
 }
 
 .rompCard:hover .romp,
@@ -652,10 +676,16 @@ nav ul li+li+li+li {
     }
     .datingText {
         padding-top: 25px;
-        font-size: 50px;
+        font-size: 30px !important;
     }
     .datingText2 {
         font-size: 60px;
+    }
+    .synopsisBox {
+        display: none;
+    }
+    .datingBox {
+        top: 15% !important;
     }
 }
 
@@ -689,6 +719,9 @@ nav ul li+li+li+li {
     .icons {
         font-size: 18px;
         letter-spacing: 10px;
+    }
+    .datingText {
+        font-size: 20px !important;
     }
 }
 
@@ -740,8 +773,8 @@ nav ul li+li+li+li {
         left: 2% !important
     }
     .datingText {
-        padding-top: 2px;
-        font-size: 40px;
+        padding-top: 5px;
+        font-size: 20px !important;
         text-align: center !important;
         text-shadow: 1px 1px rgb(41, 41, 41);
     }
