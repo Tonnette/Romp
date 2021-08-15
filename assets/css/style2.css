@@ -462,7 +462,7 @@ nav ul li+li+li+li {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     background-color: #b3fff7;
-    border-radius: 30% !important;
+    border-radius: 0% !important;
     padding: 15px
 }
 
@@ -560,9 +560,11 @@ nav ul li+li+li+li {
 }
 
 .text7a {
-    font-size: 80px;
-    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Montserrat';
     font-weight: 100;
+    text-transform: uppercase;
     color: #0884f9;
     letter-spacing: -2px;
     padding: 0px !important;
@@ -578,6 +580,12 @@ nav ul li+li+li+li {
     color: black;
     font-size: 20px;
     font-weight: 700;
+}
+
+.textDating {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .text1c,
