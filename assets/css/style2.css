@@ -38,7 +38,7 @@ a {
     background-color: transparent;
     /* width: 90vw; */
     /* height: 20vh; */
-    height: 400px;
+    height: 300px;
     margin: auto;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
@@ -133,7 +133,7 @@ a {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #fa4399;
+    background-color: #f26294;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -699,7 +699,7 @@ nav ul li+li+li+li {
 
 @media(min-width: 1800px) {
     .flip-box {
-        height: 60vh !important;
+        height: 48vh !important;
     }
 }
 
@@ -711,13 +711,16 @@ nav ul li+li+li+li {
         font-size: 25px;
     }
     .flip-box {
-        height: 45vh;
+        height: 40vh;
     }
 }
 
-@media(max-width: 1490px) {
+@media(max-width: 1499px) {
     .datingBox {
         top: 10% !important;
+    }
+    .flip-box {
+        height: 400px;
     }
 }
 
@@ -777,6 +780,9 @@ nav ul li+li+li+li {
     .datingBox {
         top: 10% !important;
     }
+    .flip-box {
+        height: 300px;
+    }
 }
 
 @media(max-width: 858px) {
@@ -784,7 +790,7 @@ nav ul li+li+li+li {
         display: none;
     }
     .flip-box {
-        height: 300px;
+        height: 180px;
     }
     .datingBox {
         top: 0 !important;
@@ -819,11 +825,14 @@ nav ul li+li+li+li {
     .datingText {
         font-size: 20px !important;
     }
+    .flip-box {
+        height: 200px;
+    }
 }
 
 @media(max-width: 575px) {
     .flip-box {
-        height: 12vh;
+        height: 120px;
     }
     .middle7 {
         width: 86vw;
