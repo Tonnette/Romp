@@ -31,6 +31,10 @@ a {
     box-sizing: border-box
 }
 
+.michaelBox {
+    display: none;
+}
+
 
 /* Flip */
 
@@ -178,25 +182,11 @@ a {
     padding: 0px 50px 0px 25px;
 }
 
-.photo2,
-.lessText {
-    display: none;
-}
-
 .photo,
 .photo3 {
     border-radius: 50%;
     width: 140px;
 }
-
-
-/* .photo {
-    border: 10px solid #f26294;
-}
-
-.photo3 {
-    border: 10px solid #119da4 !important;
-} */
 
 button {
     font-family: 'Montserrat', cursive;
@@ -495,6 +485,10 @@ nav ul li+li+li+li {
     padding-bottom: 50px;
 }
 
+.characterImg {
+    width: 150px !important;
+}
+
 .romp,
 .why,
 .theEgg,
@@ -503,7 +497,8 @@ nav ul li+li+li+li {
 .wally,
 .vicous,
 .holding,
-.slut {
+.slut,
+.jade {
     opacity: 1;
     display: block;
     width: 100%;
@@ -512,6 +507,21 @@ nav ul li+li+li+li {
     backface-visibility: hidden;
     border-radius: 50%;
     border: 0;
+}
+
+.middleJade {
+    display: none;
+    transition: .5s ease;
+    opacity: 0;
+    top: 80%;
+    left: 100%;
+    width: 80%;
+    transform: translate(10%, -170%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #b3fff7;
+    border-radius: 0% !important;
+    padding: 15px
 }
 
 .middle1,
@@ -566,7 +576,9 @@ nav ul li+li+li+li {
 .milkCard,
 .loveCard,
 .slutCard,
-.wallyCard {
+.wallyCard,
+.jadeCard,
+.characterCard {
     border-radius: 50%;
     border: none;
 }
@@ -582,7 +594,10 @@ nav ul li+li+li+li {
 .whyCard:hover .why,
 .michaelCard:hover .trailerBtnBox,
 .michaelCard:hover .michael,
-.michaelCard:hover .datingText2 {
+.michaelCard:hover .datingText2,
+.jadeCard:hover .jade,
+.characterCard:hover .jade {
+    display: block;
     opacity: 0.2;
 }
 
@@ -595,9 +610,17 @@ nav ul li+li+li+li {
 .characterCard:hover .middle6,
 .michaelCard:hover .middle7,
 .holdingCard:hover .middle8,
-.whyCard:hover {
+.whyCard:hover,
+.jadeCard:hover .middleJade,
+.characterCard:hover .middleJade {
     opacity: 0.8;
+    display: block;
 }
+
+
+/* .characterCard:hover .bottomText {
+    visibility: hidden;
+} */
 
 .text1a,
 .text2a,
@@ -654,6 +677,10 @@ nav ul li+li+li+li {
     font-weight: 700;
 }
 
+.textJade {
+    font-size: 10px;
+}
+
 .textDating {
     font-family: 'Montserrat';
     font-weight: 100;
@@ -702,9 +729,17 @@ nav ul li+li+li+li {
     font-weight: 400;
 }
 
+
+/* .textBottom {
+    padding-left: 40px;
+} */
+
 @media(min-width: 1800px) {
     .flip-box {
         height: 48vh !important;
+    }
+    .photo3 {
+        width: 150px;
     }
 }
 
@@ -718,6 +753,12 @@ nav ul li+li+li+li {
     .flip-box {
         height: 40vh;
     }
+    .textBottom {
+        padding: "none" !important;
+    }
+    .photo3 {
+        width: 140px;
+    }
 }
 
 @media(max-width: 1499px) {
@@ -726,6 +767,12 @@ nav ul li+li+li+li {
     }
     .flip-box {
         height: 400px;
+    }
+    .characterImg {
+        width: 90px !important;
+    }
+    .textBottom {
+        padding: "none" !important;
     }
 }
 
@@ -759,9 +806,8 @@ nav ul li+li+li+li {
         text-shadow: 1px 1px 2px rgb(94, 94, 94);
         margin-top: 20px;
     }
-    .photo,
-    .photo3 {
-        width: 120px !important;
+    .characterImg {
+        width: 100px !important;
     }
     .trailerThumbImg {
         width: 40vw;
@@ -787,25 +833,6 @@ nav ul li+li+li+li {
     }
     .flip-box {
         height: 300px;
-    }
-}
-
-@media(max-width: 858px) {
-    .synopsis {
-        display: none;
-    }
-    .flip-box {
-        height: 180px;
-    }
-    .datingBox {
-        top: 0 !important;
-    }
-    .middle7 {
-        width: 90vw;
-        height: 80px;
-    }
-    .text7a {
-        font-size: 30px !important;
     }
 }
 
@@ -836,9 +863,44 @@ nav ul li+li+li+li {
     .flip-box {
         height: 200px;
     }
+    .photo3 {
+        width: 100px;
+    }
+}
+
+@media(max-width: 991px) {
+    .synopsis {
+        display: none;
+    }
+    .flip-box {
+        height: 180px;
+    }
+    .datingBox {
+        top: 0 !important;
+    }
+    .middle7 {
+        width: 90vw;
+        height: 80px;
+    }
+    .text7a {
+        font-size: 30px !important;
+    }
+    .photo3 {
+        width: 150px;
+    }
+}
+
+@media(max-width: 767px) {
+    .photo3 {
+        width: 160px;
+    }
 }
 
 @media(max-width: 575px) {
+    .photo3 {
+        width: 160px;
+        padding-right: 0px !important;
+    }
     .flip-box {
         height: 120px;
     }
@@ -859,10 +921,6 @@ nav ul li+li+li+li {
         letter-spacing: -5px;
         height: 80px;
         margin-top: -50px;
-    }
-    .photo,
-    .photo3 {
-        width: 120px !important;
     }
     .video {
         width: 100vw;

@@ -4,8 +4,9 @@ const container = document.querySelector('.container-fluid')
 const myNav = document.querySelector('nav')
 const more = document.querySelector('.moreText')
 const less = document.querySelector('.lessText')
-    // var slideIndex = 1;
-    // showSlides(slideIndex);
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
 // // Next/previous controls
 // function plusSlides(n) {
