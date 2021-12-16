@@ -11,6 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -158,7 +160,7 @@ a {
 }
 
 .textBox {
-    margin-top: -40px;
+    margin-top: -10px;
     z-index: 1;
 }
 
@@ -238,8 +240,8 @@ button {
 .rompText {
     text-align: center !important;
     font-size: 200px;
-    padding: 50px 0px 0px 0px;
-    font-family: 'Roboto', sans-serif;
+    padding: 50px 0px 10px 0px;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
     color: #f26294;
     text-shadow: 2px 2px 3px rgb(29, 29, 29);
@@ -266,14 +268,14 @@ button {
 .castText {
     /* font-family: 'Dancing Script', cursive; */
     font-family: 'Dancing Script', cursive;
-    font-weight: 400;
-    font-size: 120px;
+    font-weight: 200;
+    font-size: 75px;
     margin: auto;
     text-align: center;
     padding: 0px;
     color: #5ab5a0;
-    text-shadow: 1px 2px rgb(94, 94, 94);
-    letter-spacing: -5px;
+    text-shadow: 1px 1px rgb(94, 94, 94);
+    letter-spacing: -1px;
     /* text-transform: uppercase; */
 }
 
@@ -738,6 +740,7 @@ nav ul li+li+li+li {
     .flip-box {
         height: 48vh !important;
     }
+
     .photo3 {
         width: 150px;
     }
@@ -747,15 +750,19 @@ nav ul li+li+li+li {
     .datingText {
         font-size: 90px;
     }
+
     .synopsis {
         font-size: 25px;
     }
+
     .flip-box {
         height: 40vh;
     }
+
     .textBottom {
         padding: "none" !important;
     }
+
     .photo3 {
         width: 140px;
     }
@@ -765,12 +772,15 @@ nav ul li+li+li+li {
     .datingBox {
         top: 10% !important;
     }
+
     .flip-box {
         height: 400px;
     }
+
     .characterImg {
         width: 90px !important;
     }
+
     .textBottom {
         padding: "none" !important;
     }
@@ -781,19 +791,24 @@ nav ul li+li+li+li {
         width: 90vw;
         height: 250px;
     }
+
     .trailerBtnBox2 {
         top: 70% !important;
     }
+
     .watchTrailer {
         font-size: 10px;
         padding: 10px;
     }
+
     .webseries {
         display: none;
     }
+
     .rompBox {
         height: 82px;
     }
+
     .rompText {
         font-size: 100px;
         letter-spacing: normal;
@@ -801,36 +816,45 @@ nav ul li+li+li+li {
         height: 80px;
         margin-top: -80px;
     }
+
     .seriesText {
-        font-size: 75px;
-        text-shadow: 1px 1px 2px rgb(94, 94, 94);
-        margin-top: 20px;
+        font-size: 55px;
+        text-shadow: 1px 1px 1px rgb(94, 94, 94);
+        margin-top: 0px;
     }
+
     .characterImg {
         width: 100px !important;
     }
+
     .trailerThumbImg {
         width: 40vw;
     }
+
     .trailerThumb {
         text-align: center;
         justify-content: center;
         margin: auto;
         padding: 0px;
     }
+
     .datingText {
         padding-top: 25px;
         font-size: 30px !important;
     }
+
     .datingText2 {
         font-size: 60px;
     }
+
     .synopsisBox {
         display: none;
     }
+
     .datingBox {
         top: 10% !important;
     }
+
     .flip-box {
         height: 300px;
     }
@@ -840,29 +864,37 @@ nav ul li+li+li+li {
     .trailerThumbImg {
         width: 90vw;
     }
+
     .text7b {
         display: none;
     }
+
     .middle7 {
         width: 90vw;
         height: 100px;
     }
+
     .text7a {
         font-size: 30px !important;
     }
+
     .datingBox {
         top: 0 !important;
     }
+
     .icons {
         font-size: 18px;
         letter-spacing: 10px;
     }
+
     .datingText {
         font-size: 20px !important;
     }
+
     .flip-box {
         height: 200px;
     }
+
     .photo3 {
         width: 100px;
     }
@@ -872,19 +904,24 @@ nav ul li+li+li+li {
     .synopsis {
         display: none;
     }
+
     .flip-box {
         height: 180px;
     }
+
     .datingBox {
         top: 0 !important;
     }
+
     .middle7 {
         width: 90vw;
         height: 80px;
     }
+
     .text7a {
         font-size: 30px !important;
     }
+
     .photo3 {
         width: 150px;
     }
@@ -901,20 +938,25 @@ nav ul li+li+li+li {
         width: 160px;
         padding-right: 0px !important;
     }
+
     .flip-box {
         height: 120px;
     }
+
     .middle7 {
         width: 86vw;
         height: 60px;
     }
+
     .trailerBtnBox2 {
         top: 80% !important;
     }
+
     .watchTrailer {
         font-size: 8px;
         padding: 5px;
     }
+
     .rompText {
         font-size: 70px;
         letter-spacing: normal;
@@ -922,39 +964,48 @@ nav ul li+li+li+li {
         height: 80px;
         margin-top: -50px;
     }
+
     .video {
         width: 100vw;
     }
+
     .trailerThumb {
         text-align: center;
         justify-content: center;
         margin: auto;
         padding: 0px;
     }
+
     .trailerThumbImg {
         width: 80vw;
         padding-bottom: 10px;
     }
+
     .icons {
         font-size: 15px;
         letter-spacing: 15px;
     }
+
     .text7a,
     .datingText2 {
         font-size: 15px !important;
     }
+
     .datingBox {
         left: 2% !important
     }
+
     .datingText {
         padding-top: 5px;
         font-size: 20px !important;
         text-align: center !important;
         text-shadow: 1px 1px rgb(41, 41, 41);
     }
+
     .socials {
         text-align: center !important;
     }
+
     .icons {
         font-size: 15px;
         letter-spacing: 2px;
@@ -966,6 +1017,7 @@ nav ul li+li+li+li {
     .datingBox {
         left: 2% !important
     }
+
     .datingText {
         padding: 2px;
         font-size: 22px;
@@ -973,10 +1025,12 @@ nav ul li+li+li+li {
         text-shadow: 1px 1px rgb(41, 41, 41);
         letter-spacing: -1px;
     }
+
     .socials {
         text-align: center !important;
         padding: 0px;
     }
+
     .icons {
         font-size: 10px;
         letter-spacing: 2px;
