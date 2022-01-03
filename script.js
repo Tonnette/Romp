@@ -6,6 +6,7 @@ const more = document.querySelector('.moreText')
 const less = document.querySelector('.lessText')
 const trailer = document.querySelector('.watchTrailer')
 const hideTrailer = document.querySelector('.hideTrailer')
+const trailerVideo = document.querySelector('.trailerVideo')
 
 // var slideIndex = 1;
 // showSlides(slideIndex);
@@ -74,19 +75,23 @@ close.addEventListener(
   () => (myNav.style.transition = 'opacity 1s, visibility 1s')
 )
 
+//Trailer toggles on and off
 // more.addEventListener('click', () => document.querySelector(".photo2").style.display = "block");
 trailer.addEventListener('click', () => (trailer.style.display = 'none'))
 trailer.addEventListener('click', () => (hideTrailer.style.display = 'block'))
+trailer.addEventListener('click', () => (trailerVideo.style.display = 'block'))
 
-// hideTrailer.addEventListener(
-//   'click',
-//   () => (document.querySelector('.photo2').style.display = 'none')
-// )
 hideTrailer.addEventListener(
   'click',
   () => (hideTrailer.style.display = 'none')
 )
 hideTrailer.addEventListener('click', () => (trailer.style.display = 'block'))
+hideTrailer.addEventListener(
+  'click',
+  () => (trailerVideo.style.display = 'none')
+)
+
+//Slide show code
 
 function showSlides() {
   var i
