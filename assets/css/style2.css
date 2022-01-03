@@ -394,6 +394,10 @@ nav ul li+li+li+li+li {
     transform: translateX(-300%);
 }
 
+.watchText {
+    font-size: 40px;
+}
+
 .socials {
     margin: auto;
     padding-top: 20px;
@@ -503,7 +507,8 @@ nav ul li+li+li+li+li {
     text-align: center;
     background-color: #b3fff7;
     border-radius: 0% !important;
-    padding: 15px
+    padding: 15px;
+    z-index: 10;
 }
 
 .middle2 {
