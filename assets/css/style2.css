@@ -33,77 +33,8 @@ a {
     box-sizing: border-box
 }
 
-.michaelBox {
-    display: none;
-}
 
 
-/* Flip */
-
-.flip-box {
-    background-color: transparent;
-    /* width: 90vw; */
-    /* height: 20vh; */
-    height: 300px;
-    margin: auto;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    text-align: center;
-    justify-content: center;
-    background-color: #fcf4eb;
-    /* Remove this if you don't want the 3D effect */
-}
-
-
-/* This container is needed to position the front and back side */
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
-
-
-/* Position the front and back side */
-
-.flip-box-front,
-.flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fcf4eb;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
-}
-
-
-/* Style the front side (fallback if image is missing) */
-
-.flip-box-front {
-    background-color: #fcf4eb;
-    color: black;
-}
-
-
-/* Style the back side */
-
-.flip-box-back {
-    background-color: #fcf4eb;
-    color: white;
-    transform: rotateY(180deg);
-}
 
 
 /* Slideshow container */
@@ -114,11 +45,7 @@ a {
     margin: auto;
 }
 
-.datingRow {
-    text-align: right;
-    padding-right: 25px;
-    padding-left: 50px;
-}
+
 
 
 /* Hide the images by default */
@@ -134,21 +61,7 @@ a {
 
 /* The dots/bullets/indicators */
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #629cf2;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 
-.active,
-.dot:hover {
-    background-color: #3e3e3e;
-}
 
 .rompBox {
     background-color: #fed8ed;
@@ -579,8 +492,7 @@ nav ul li+li+li+li {
 .loveCard,
 .slutCard,
 .wallyCard,
-.jadeCard,
-.characterCard {
+.jadeCard {
     border-radius: 50%;
     border: none;
 }
@@ -590,15 +502,7 @@ nav ul li+li+li+li {
 .milkCard:hover .milk,
 .loveCard:hover .loveBytes,
 .slutCard:hover .slut,
-.wallyCard:hover .wally,
-.characterCard:hover .vicious,
-.holdingCard:hover .holding,
-.whyCard:hover .why,
-.michaelCard:hover .trailerBtnBox,
-.michaelCard:hover .michael,
-.michaelCard:hover .datingText2,
-.jadeCard:hover .jade,
-.characterCard:hover .jade {
+.wallyCard:hover .wally {
     display: block;
     opacity: 0.2;
 }
@@ -608,21 +512,13 @@ nav ul li+li+li+li {
 .milkCard:hover .middle3,
 .loveCard:hover .middle4,
 .slutCard:hover .middle5,
-.wallyCard:hover .middle6,
-.characterCard:hover .middle6,
-.michaelCard:hover .middle7,
-.holdingCard:hover .middle8,
-.whyCard:hover,
-.jadeCard:hover .middleJade,
-.characterCard:hover .middleJade {
+.wallyCard:hover .middle6 {
     opacity: 0.8;
     display: block;
 }
 
 
-/* .characterCard:hover .bottomText {
-    visibility: hidden;
-} */
+
 
 .text1a,
 .text2a,
@@ -732,19 +628,6 @@ nav ul li+li+li+li {
 }
 
 
-/* .textBottom {
-    padding-left: 40px;
-} */
-
-@media(min-width: 1800px) {
-    .flip-box {
-        height: 48vh !important;
-    }
-
-    .photo3 {
-        width: 150px;
-    }
-}
 
 @media(min-width: 1500px) {
     .datingText {
@@ -763,9 +646,7 @@ nav ul li+li+li+li {
         padding: "none" !important;
     }
 
-    .photo3 {
-        width: 140px;
-    }
+ 
 }
 
 @media(max-width: 1499px) {
@@ -860,7 +741,7 @@ nav ul li+li+li+li {
     }
 }
 
-@media(max-width: 1100px) {
+@media(min-width: 992px) {
     .trailerThumbImg {
         width: 90vw;
     }
@@ -890,15 +771,15 @@ nav ul li+li+li+li {
     .datingText {
         font-size: 20px !important;
     }
-
-    .flip-box {
-        height: 200px;
-    }
-
     .photo3 {
         width: 100px;
     }
-}
+    .characters {
+        padding-right: 80px;
+    }
+
+  
+
 
 @media(max-width: 991px) {
     .synopsis {
@@ -922,22 +803,13 @@ nav ul li+li+li+li {
         font-size: 30px !important;
     }
 
-    .photo3 {
-        width: 150px;
-    }
+ 
 }
 
-@media(max-width: 767px) {
-    .photo3 {
-        width: 160px;
-    }
-}
+
 
 @media(max-width: 575px) {
-    .photo3 {
-        width: 160px;
-        padding-right: 0px !important;
-    }
+    
 
     .flip-box {
         height: 120px;
