@@ -59,6 +59,8 @@ a {
 }
 
 
+
+
 /* The dots/bullets/indicators */
 
 
@@ -157,7 +159,7 @@ button {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
     color: #f26294;
-    text-shadow: 2px 2px 3px rgb(29, 29, 29);
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
     margin: -90px 0px 0px 0px;
     letter-spacing: -15px;
 }
@@ -218,6 +220,11 @@ button {
     background-color: #bde0fe;
 }
 
+.active,
+.dot:hover {
+    background-color: #3e3e3e;
+}
+
 .datingBox {
     margin: auto;
 }
@@ -256,9 +263,9 @@ button {
     padding: 0px;
 }
 
-.container-fluid.show-nav {
-    transform: rotate(-20deg);
-}
+/* .container-fluid.show-nav {
+    transform: rotate(-10deg);
+} */
 
 .circle-container {
     position: fixed;
@@ -276,7 +283,7 @@ button {
 }
 
 .container-fluid.show-nav {
-    transform: rotate(-15deg);
+    transform: rotate(-35deg);
 }
 
 .circle button {
@@ -404,6 +411,7 @@ nav ul li+li+li+li {
     width: 150px !important;
 }
 
+
 .romp,
 .why,
 .theEgg,
@@ -445,7 +453,7 @@ nav ul li+li+li+li {
 .middle4,
 .middle5,
 .middle6,
-.middle7,
+.blueHoverBox,
 .middle8,
 .middle9 {
     transition: .5s ease;
@@ -482,7 +490,7 @@ nav ul li+li+li+li {
     background-color: #ca8dff;
 }
 
-.middle7 {
+.blueHoverBox {
     background-color: #b8dbff;
 }
 
@@ -502,7 +510,15 @@ nav ul li+li+li+li {
 .milkCard:hover .milk,
 .loveCard:hover .loveBytes,
 .slutCard:hover .slut,
-.wallyCard:hover .wally {
+.wallyCard:hover .wally,
+.characterCard:hover .vicious,
+.holdingCard:hover .holding,
+.whyCard:hover .why,
+.michaelCard:hover .trailerBtnBox,
+.michaelCard:hover .michael,
+.michaelCard:hover .datingText2,
+.jadeCard:hover .jade,
+.characterCard:hover .jade  {
     display: block;
     opacity: 0.2;
 }
@@ -512,7 +528,13 @@ nav ul li+li+li+li {
 .milkCard:hover .middle3,
 .loveCard:hover .middle4,
 .slutCard:hover .middle5,
-.wallyCard:hover .middle6 {
+.wallyCard:hover .middle6,
+.characterCard:hover .middle6,
+.michaelCard:hover .blueHoverBox,
+.holdingCard:hover .middle8,
+.whyCard:hover,
+.jadeCard:hover .middleJade,
+.characterCard:hover .middleJade {
     opacity: 0.8;
     display: block;
 }
@@ -668,10 +690,7 @@ nav ul li+li+li+li {
 }
 
 @media(max-width: 1199px) {
-    .middle7 {
-        width: 90vw;
-        height: 250px;
-    }
+  
 
     .trailerBtnBox2 {
         top: 70% !important;
@@ -746,14 +765,9 @@ nav ul li+li+li+li {
         width: 90vw;
     }
 
-    .text7b {
-        display: none;
-    }
+   
 
-    .middle7 {
-        width: 90vw;
-        height: 100px;
-    }
+
 
     .text7a {
         font-size: 30px !important;
@@ -777,6 +791,7 @@ nav ul li+li+li+li {
     .characters {
         padding-right: 80px;
     }
+}
 
   
 
@@ -786,21 +801,20 @@ nav ul li+li+li+li {
         display: none;
     }
 
-    .flip-box {
-        height: 180px;
-    }
+
 
     .datingBox {
         top: 0 !important;
     }
 
-    .middle7 {
-        width: 90vw;
-        height: 80px;
-    }
+
 
     .text7a {
-        font-size: 30px !important;
+        font-size: 20px !important;
+    }
+
+    .text7b {
+        display: none;
     }
 
  
@@ -811,14 +825,8 @@ nav ul li+li+li+li {
 @media(max-width: 575px) {
     
 
-    .flip-box {
-        height: 120px;
-    }
 
-    .middle7 {
-        width: 86vw;
-        height: 60px;
-    }
+
 
     .trailerBtnBox2 {
         top: 80% !important;
