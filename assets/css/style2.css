@@ -400,12 +400,12 @@ nav ul li+li+li+li+li {
 
 .socials {
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     cursor: pointer;
 }
 
-.icons {
+.icons, .socials {
     font-size: 30px;
     letter-spacing: 25px;
     color: #303030;
@@ -633,10 +633,16 @@ nav ul li+li+li+li+li {
 .text4b,
 .text5b,
 .text6b,
-.text7b {
+.text7b 
+ {
     color: black;
     font-size: 20px;
     font-weight: 700;
+}
+
+.synopsis {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .textJade {
@@ -845,9 +851,7 @@ nav ul li+li+li+li+li {
 
 
 @media(max-width: 991px) {
-    .synopsis {
-        display: none;
-    }
+   
 
 
 
@@ -911,10 +915,13 @@ nav ul li+li+li+li+li {
         padding-bottom: 10px;
     }
 
-    .icons {
-        font-size: 15px;
+    .socials {
+        font-size: 20px;
         letter-spacing: 15px;
+        padding-left: 0px !important;
     }
+
+    
 
     .text7a,
     .datingText2 {
@@ -932,14 +939,16 @@ nav ul li+li+li+li+li {
         text-shadow: 1px 1px rgb(41, 41, 41);
     }
 
-    .socials {
-        text-align: center !important;
-    }
+   
 
     .icons {
         font-size: 15px;
         letter-spacing: 2px;
         text-align: center !important;
+    }
+    .smedia, .socials {
+        padding: 0px !important;
+        font-size: 18px;
     }
 }
 
@@ -956,15 +965,17 @@ nav ul li+li+li+li+li {
         letter-spacing: -1px;
     }
 
-    .socials {
-        text-align: center !important;
-        padding: 0px;
-    }
+  
 
     .icons {
         font-size: 10px;
         letter-spacing: 2px;
         text-align: center !important;
+    }
+
+    .smedia, .socials {
+        padding: 0px !important;
+        font-size: 15px;
     }
 }
 
