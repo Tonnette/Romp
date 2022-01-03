@@ -123,6 +123,21 @@ button {
     position: relative;
 }
 
+h3 {
+    font-family: 'Montserrat', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.nameText {
+    font-family: 'Montserrat', cursive;
+    font-weight: 100;
+    font-size: 12px;
+
+}
+
 .trailerBtnBox {
     text-align: center;
     justify-content: center;
@@ -130,6 +145,8 @@ button {
 
 .watchTrailer {
     background-color: rgb(204, 165, 249) !important;
+    color: black;
+        font-weight: 500;
 }
 
 .episodes,
@@ -540,11 +557,14 @@ nav ul li+li+li+li {
 }
 
 
-
+.text3a {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
 
 .text1a,
 .text2a,
-.text3a,
+
 .text4a,
 .text5a,
 .text6a {
@@ -558,9 +578,7 @@ nav ul li+li+li+li {
     color: #2a275b;
 }
 
-.text3a {
-    color: #d07200;
-}
+
 
 .text4a {
     color: #b1066d;
@@ -699,6 +717,8 @@ nav ul li+li+li+li {
     .watchTrailer {
         font-size: 10px;
         padding: 10px;
+        color: black;
+        font-weight: 500;
     }
 
     .webseries {
@@ -763,6 +783,10 @@ nav ul li+li+li+li {
 @media(min-width: 992px) {
     .trailerThumbImg {
         width: 90vw;
+    }
+    .characterText {
+        padding-left: 5px;
+        padding-top: 10px;
     }
 
    
@@ -835,6 +859,8 @@ nav ul li+li+li+li {
     .watchTrailer {
         font-size: 8px;
         padding: 5px;
+        color: black;
+        font-weight: 500;
     }
 
     .rompText {
