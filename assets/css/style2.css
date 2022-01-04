@@ -819,6 +819,8 @@ nav ul li+li+li+li+li {
         padding-top: 10px;
     }
 
+  
+
    
 
 
@@ -948,7 +950,8 @@ nav ul li+li+li+li+li {
     }
     .smedia, .socials {
         padding: 0px !important;
-        font-size: 18px;
+        font-size: 20px;
+        padding: 0px !important;
     }
 }
 
@@ -975,7 +978,8 @@ nav ul li+li+li+li+li {
 
     .smedia, .socials {
         padding: 0px !important;
-        font-size: 15px;
+        font-size: 20px;
+        padding: 0px !important;
     }
 }
 
