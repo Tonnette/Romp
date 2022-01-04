@@ -341,7 +341,7 @@ h3 {
 
 .circle button#close {
     left: 45%;
-    top: 45%;
+    top: 40%;
     display: none;
 }
 
@@ -953,6 +953,22 @@ nav ul li+li+li+li+li {
         font-size: 20px;
         padding: 0px !important;
     }
+    .circle {
+       
+        height: 150px;
+        width: 150px;
+        
+    }
+    .circle-container {
+    
+        top: -80px;
+        left: -80px;
+       
+    }
+    .circle button#open {
+        left: 40%;
+        top: 35%
+    }
 }
 
 @media(max-width: 400px) {
@@ -981,6 +997,8 @@ nav ul li+li+li+li+li {
         font-size: 20px;
         padding: 0px !important;
     }
+
+  
 }
 
 .myFooter {
