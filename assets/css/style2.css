@@ -847,6 +847,16 @@ nav ul li+li+li+li+li {
     .characters {
         padding-right: 80px;
     }
+
+    .sponsorCard {
+        width: 30vw;
+      
+     
+    
+    }
+    .sponsorDiv {
+        padding-left: 10%;
+    }
 }
 
   
