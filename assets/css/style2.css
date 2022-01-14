@@ -937,7 +937,8 @@ nav ul li+li+li+li+li {
 
     .text7a,
     .datingText2 {
-        font-size: 15px !important;
+        font-size: 20px !important;
+        visibility: visible;
     }
 
     .datingBox {
